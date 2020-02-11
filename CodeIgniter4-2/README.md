@@ -7,7 +7,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
 1. Bikin database
     - Nama database 'ci4tutorial'
     - Bikin Table news dengan menjalankan query ini
-
+        ```SQL Query
         CREATE TABLE news 
         (
             id int(11) NOT NULL AUTO_INCREMENT,
@@ -17,6 +17,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
             PRIMARY KEY (id),
             KEY slug (slug)
         );
+        ```
     
     - Isi table tersebut dengan queri ini 
 
@@ -37,7 +38,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
     - Membuat file baru di app/Models/ dengan nama NewsModel.php
     - Isi file tersebut dengan code di bawah ini
         
-        /**
+        ```PHP
         <?php namespace App\Models;
         use CodeIgniter\Model;
         
@@ -57,4 +58,4 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
                             ->first();
             }
         }
-        */
+        ```
