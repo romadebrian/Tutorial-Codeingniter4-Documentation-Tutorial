@@ -107,7 +107,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
         }
         ```
 
-4. Membuat tampilan untuk daftar berita (overview)
+5. Membuat tampilan untuk daftar berita (overview)
     - Buatlah folder 'news' di app/Views/
     - Buatlah file di app/Views/news/ dengan nama overview.php
     - Isi file tersebut dengan code di bawah sini
@@ -136,7 +136,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
         <?php endif ?>
         ```
 
-5. Membuat view untuk menampilkan berita 1 judul saja / untuk 'View article'
+6. Membuat view untuk menampilkan berita 1 judul saja / untuk 'View article'
     - Membuat file di app/Views/news/ dengan nama view.php
     - Isi file tersebut dengan code di bawah ini
         ```PHP
@@ -144,7 +144,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
         echo '<h2>'.$news['title'].'</h2>';
         echo $news['body'];
         ```
-6. Mengatur Routing (Penting!!!)
+7. Mengatur Routing (Penting!!!)
     - Buka file app/config/routes.php
     - lalu cari code $routes->get('/', 'Home::index'); 
       Code tersebut berada di bawah 
@@ -162,7 +162,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
         $routes->get('(:any)', 'Pages::showme/$1');
         ```
 
-7. Jalankan 
+8. Jalankan 
 
 Note : localhost:8080/news bisa di jalankan dengan menjalankan perintah 'php spark serve' di cmd berlokasi di file codeigniter di jalankan
 
