@@ -37,6 +37,7 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
     - Membuat file baru di app/Models/ dengan nama NewsModel.php
     - Isi file tersebut dengan code di bawah ini
         
+        /**
         <?php namespace App\Models;
         use CodeIgniter\Model;
         
@@ -56,3 +57,4 @@ Ringkasan daro tutorial 1 Codeigniter Dokumentasi
                             ->first();
             }
         }
+        */
